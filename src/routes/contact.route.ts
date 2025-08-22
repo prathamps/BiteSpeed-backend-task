@@ -3,6 +3,6 @@ import * as identifyController from "../controllers/contact.controller"
 
 const router = Router()
 
-router.use()
+router.post("/identify", identifyController.identifyContact)
 
 export default router
