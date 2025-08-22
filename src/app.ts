@@ -2,6 +2,7 @@ import express from "express"
 import cors from "cors"
 import helmet from "helmet"
 import dotenv from "dotenv"
+import contactRoutes from "./routes/contact.route"
 
 dotenv.config()
 
@@ -13,8 +14,8 @@ app.use(helmet())
 app.use(cors())
 app.use(express.json())
 
-// Routes
-// TODO: Add your /identify route here
+//Routess
+app.use("/", contactRoutes)
 
 app.listen(PORT, () => {
 	console.log(`Server running on port ${PORT}`)
