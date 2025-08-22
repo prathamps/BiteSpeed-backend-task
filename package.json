@@ -6,7 +6,7 @@
 		"start": "node dist/app.js",
 		"dev": "nodemon src/app.ts",
 		"build": "tsc",
-		"migrate": "ts-node src/database/migrations/run-migrations.ts"
+		"migrate": "ts-node src/database/migrations/run-migration.ts"
 	},
 	"keywords": [],
 	"author": "",
